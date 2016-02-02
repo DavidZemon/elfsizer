@@ -4,7 +4,7 @@
  */
 
 int main () {
-    ElfSizer sizer;
+    ElfSizer sizer(nullptr);
 
     return 0;
 }

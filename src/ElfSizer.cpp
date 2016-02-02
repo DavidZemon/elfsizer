@@ -6,6 +6,10 @@
 
 #include "ElfSizer.h"
 
-ElfSizer::ElfSizer() {
+ElfSizer::ElfSizer(const std::string string) {
 
+}
+
+int ElfSizer::run() {
+    return BAD_INPUT_FILE;
 }
