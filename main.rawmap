@@ -1,0 +1,565 @@
+Archive member included because of file (symbol)
+
+../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                              CMakeFiles/GettingStarted.dir/GettingStarted.cpp.obj (_pwOut)
+../../PropWare/models/lmm/libPropWare.a(PropWare.cpp.obj)
+                              ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj) (___cxa_pure_virtual)
+../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+                              ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj) (__ZN8PropWare4UART20PARALLAX_STANDARD_TXE)
+../../external_libs/lmm/libSimple.a(adcACpropab.cogc.cog)
+                              ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj) (OUTA)
+/opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(thread.o)
+                              /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o (__TLS)
+/opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(memset.o)
+                              /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtbegin.o (_memset)
+/opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(strlen.o)
+                              ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj) (_strlen)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/spinboot.o
+ .data          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/spinboot.o
+ .bss           0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/spinboot.o
+ .text          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o
+ .data          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o
+ .bss           0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o
+ .text          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtbegin.o
+ .data          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtbegin.o
+ .bss           0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtbegin.o
+ .text          0x00000000        0x0 CMakeFiles/GettingStarted.dir/GettingStarted.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/GettingStarted.dir/GettingStarted.cpp.obj
+ .text          0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .data          0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .bss           0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n24_N8PropWare19AbstractSimplexUART11set_tx_maskENS_4Port4MaskE
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n28_NK8PropWare19AbstractSimplexUART11get_tx_maskEv
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n36_NK8PropWare19AbstractSimplexUART14get_data_widthEv
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n44_NK8PropWare19AbstractSimplexUART10get_parityEv
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n52_NK8PropWare19AbstractSimplexUART18get_stop_bit_widthEv
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n56_N8PropWare19AbstractSimplexUART13set_baud_rateEi
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n60_NK8PropWare19AbstractSimplexUART13get_baud_rateEv
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n64_NK8PropWare19AbstractSimplexUART4sendEt
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n12_N8PropWare19AbstractSimplexUART8put_charEc
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n16_N8PropWare19AbstractSimplexUART4putsEPKc
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n68_NK8PropWare19AbstractSimplexUART10send_arrayEPKcj
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n48_N8PropWare19AbstractSimplexUART18set_stop_bit_widthEh
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n40_N8PropWare19AbstractSimplexUART10set_parityENS_4UART6ParityE
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text._ZTv0_n32_N8PropWare19AbstractSimplexUART14set_data_widthEh
+                0x00000000       0x1c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .rodata._ZTCN8PropWare11SimplexUARTE0_NS_4UARTE
+                0x00000000       0x4c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .rodata._ZTTN8PropWare11SimplexUARTE
+                0x00000000       0x20 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text          0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(PropWare.cpp.obj)
+ .data          0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(PropWare.cpp.obj)
+ .bss           0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(PropWare.cpp.obj)
+ .text.__cxa_pure_virtual
+                0x00000000       0x10 ../../PropWare/models/lmm/libPropWare.a(PropWare.cpp.obj)
+ .text.__gxx_personality_sj0
+                0x00000000       0x10 ../../PropWare/models/lmm/libPropWare.a(PropWare.cpp.obj)
+ .bss._ZN8PropWare21_sd_firstByteResponseE
+                0x00000000        0x1 ../../PropWare/models/lmm/libPropWare.a(PropWare.cpp.obj)
+ .text          0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+ .data          0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+ .bss           0x00000000        0x0 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+ .data._ZN8PropWare4UART20PARALLAX_STANDARD_RXE
+                0x00000000        0x4 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+ .data._cfg_rxpin
+                0x00000000        0x4 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+ .bss           0x00000000        0x0 ../../external_libs/lmm/libSimple.a(adcACpropab.cogc.cog)
+ .data          0x00000000        0x0 ../../external_libs/lmm/libSimple.a(adcACpropab.cogc.cog)
+ .data.adcACpropab_code
+                0x00000000        0x4 ../../external_libs/lmm/libSimple.a(adcACpropab.cogc.cog)
+ .text          0x00000000        0x4 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(thread.o)
+ .data          0x00000000        0x4 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(thread.o)
+ .data          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(memset.o)
+ .bss           0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(memset.o)
+ .data          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(strlen.o)
+ .bss           0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(strlen.o)
+ .text          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+ .data          0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+ .bss           0x00000000        0x0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+hub              0x00000000         0x00008000
+cog              0x00000000         0x000007c0
+coguser          0x00000000         0x000007c0
+kermem           0x00000000         0x000006c0
+kerextmem        0x000006c0         0x00000100
+ram              0x20000000         0x10000000
+rom              0x30000000         0x10000000
+drivers          0xc0000000         0x00100000
+dummy            0xe0000000         0x00100000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/spinboot.o
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtbegin.o
+LOAD CMakeFiles/GettingStarted.dir/GettingStarted.cpp.obj
+LOAD ../../PropWare/models/lmm/libPropWare.a
+LOAD ../../external_libs/lmm/libLibpropeller.a
+LOAD ../../external_libs/lmm/libSimple.a
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/libgcc.a
+START GROUP
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/libgcc.a
+END GROUP
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/libgcc.a
+LOAD /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+
+.boot           0x00000000       0x20
+ *(.boot)
+ .boot          0x00000000       0x20 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/spinboot.o
+                0x00000008                __sys_mbox
+
+.lmmkernel      0x00000000      0x520 load address 0x00000020
+ *(.lmmkernel)
+ *(.kernel)
+ .kernel        0x00000000      0x51c /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o
+                0x00000000                __LMM_entry
+                0x00000000                r0
+                0x00000004                r1
+                0x00000008                r2
+                0x0000000c                r3
+                0x00000010                r4
+                0x00000014                r5
+                0x00000018                r6
+                0x0000001c                r7
+                0x00000020                r8
+                0x00000024                r9
+                0x00000028                r10
+                0x0000002c                r11
+                0x00000030                r12
+                0x00000034                r13
+                0x00000038                r14
+                0x0000003c                lr
+                0x00000040                sp
+                0x00000044                pc
+                0x000000ac                __LMM_MVI_r0
+                0x000000b8                __LMM_MVI_r1
+                0x000000c4                __LMM_MVI_r2
+                0x000000d0                __LMM_MVI_r3
+                0x000000dc                __LMM_MVI_r4
+                0x000000e8                __LMM_MVI_r5
+                0x000000f4                __LMM_MVI_r6
+                0x00000100                __LMM_MVI_r7
+                0x0000010c                __LMM_MVI_r8
+                0x00000118                __LMM_MVI_r9
+                0x00000124                __LMM_MVI_r10
+                0x00000130                __LMM_MVI_r11
+                0x0000013c                __LMM_MVI_r12
+                0x00000148                __LMM_MVI_r13
+                0x00000154                __LMM_MVI_r14
+                0x00000160                __LMM_MVI_lr
+                0x0000016c                __LMM_CALL
+                0x00000174                __LMM_CALL_INDIRECT
+                0x00000180                __LMM_JMP
+                0x00000188                __LMM_PUSHM
+                0x000001a8                __LMM_PUSHM_ret
+                0x000001b0                __LMM_POPRET
+                0x000001b8                __LMM_POPRET_ret
+                0x000001bc                __LMM_POPM
+                0x000001dc                __LMM_POPM_ret
+                0x000001e0                __MASK_0000FFFF
+                0x000001e4                __MASK_FFFFFFFF
+                0x000001e8                __TMP0
+                0x000001ec                __TMP1
+                0x000001f0                __MULSI
+                0x00000210                __MULSI_ret
+                0x00000214                __C_LOCK_PTR
+                0x00000218                __CMPSWAPSI
+                0x00000238                __CMPSWAPSI_ret
+                0x00000294                __LMM_FCACHE_ADDR
+                0x00000298                __LMM_RET
+                0x0000029c                __LMM_FCACHE_LOAD
+                0x000002c8                __LMM_FCACHE_START
+                0x000004c8                __loadmath
+                0x000004cc                __load_extension
+                0x000004e4                __load_extension_ret
+                0x000004e4                __loadmath_ret
+                0x000004e8                __kernel_ext
+                0x000004f0                __DIVSI
+                0x000004f8                __DIVSI_ret
+                0x000004fc                __UDIVSI
+                0x00000504                __UDIVSI_ret
+                0x0000050c                __CLZSI
+                0x00000518                __CLZSI_ret
+ .kernel        0x0000051c        0x4 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(thread.o)
+                0x0000051c                __TLS
+
+.init           0x00000540       0xb8
+ *(.init*)
+ .init          0x00000540       0xa0 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtbegin.o
+                0x00000540                entry
+                0x00000540                start
+                0x00000588                ___init
+ .init          0x000005e0       0x18 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+
+.text           0x000005f8      0x868
+ *(.text*)
+ .text.startup.main
+                0x000005f8       0xb4 CMakeFiles/GettingStarted.dir/GettingStarted.cpp.obj
+                0x000005f8                _main
+ .text._ZN8PropWare19AbstractSimplexUART11set_tx_maskENS_4Port4MaskE
+                0x000006ac       0x38 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x000006ac                __ZN8PropWare19AbstractSimplexUART11set_tx_maskENS_4Port4MaskE
+ .text._ZNK8PropWare19AbstractSimplexUART11get_tx_maskEv
+                0x000006e4        0xc ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x000006e4                __ZNK8PropWare19AbstractSimplexUART11get_tx_maskEv
+ .text._ZNK8PropWare19AbstractSimplexUART14get_data_widthEv
+                0x000006f0        0xc ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x000006f0                __ZNK8PropWare19AbstractSimplexUART14get_data_widthEv
+ .text._ZNK8PropWare19AbstractSimplexUART10get_parityEv
+                0x000006fc        0xc ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x000006fc                __ZNK8PropWare19AbstractSimplexUART10get_parityEv
+ .text._ZNK8PropWare19AbstractSimplexUART18get_stop_bit_widthEv
+                0x00000708        0xc ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000708                __ZNK8PropWare19AbstractSimplexUART18get_stop_bit_widthEv
+ .text._ZN8PropWare19AbstractSimplexUART13set_baud_rateEi
+                0x00000714       0x20 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000714                __ZN8PropWare19AbstractSimplexUART13set_baud_rateEi
+ .text._ZNK8PropWare19AbstractSimplexUART13get_baud_rateEv
+                0x00000734       0x20 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000734                __ZNK8PropWare19AbstractSimplexUART13get_baud_rateEv
+ .text._ZNK8PropWare19AbstractSimplexUART4sendEt
+                0x00000754       0xd8 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000754                __ZNK8PropWare19AbstractSimplexUART4sendEt
+ .text._ZN8PropWare19AbstractSimplexUART8put_charEc
+                0x0000082c       0x28 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x0000082c                __ZN8PropWare19AbstractSimplexUART8put_charEc
+ .text._ZN8PropWare19AbstractSimplexUART4putsEPKc
+                0x00000854       0x4c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000854                __ZN8PropWare19AbstractSimplexUART4putsEPKc
+ .text._ZNK8PropWare19AbstractSimplexUART10send_arrayEPKcj
+                0x000008a0      0x1b4 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x000008a0                __ZNK8PropWare19AbstractSimplexUART10send_arrayEPKcj
+ .text._ZN8PropWare19AbstractSimplexUART17set_stop_bit_maskEv
+                0x00000a54       0x88 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000a54                __ZN8PropWare19AbstractSimplexUART17set_stop_bit_maskEv
+ .text._ZN8PropWare19AbstractSimplexUART14set_total_bitsEv
+                0x00000adc       0x4c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000adc                __ZN8PropWare19AbstractSimplexUART14set_total_bitsEv
+ .text._ZN8PropWare19AbstractSimplexUART18set_stop_bit_widthEh
+                0x00000b28       0x54 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000b28                __ZN8PropWare19AbstractSimplexUART18set_stop_bit_widthEh
+ .text._ZN8PropWare19AbstractSimplexUART10set_parityENS_4UART6ParityE
+                0x00000b7c       0x50 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000b7c                __ZN8PropWare19AbstractSimplexUART10set_parityENS_4UART6ParityE
+ .text._ZN8PropWare19AbstractSimplexUART14set_data_widthEh
+                0x00000bcc       0xa4 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00000bcc                __ZN8PropWare19AbstractSimplexUART14set_data_widthEh
+ .text.startup._GLOBAL__sub_I__ZN8PropWare7Printer14DEFAULT_FORMATE
+                0x00000c70      0x11c ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .text          0x00000d8c       0xa8 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(memset.o)
+                0x00000d8c                _memset
+ .text          0x00000e34       0x2c /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(strlen.o)
+                0x00000e34                _strlen
+                0x00000e60                _etext = .
+
+adcACpropab.cog
+                0x00000000      0x1c4 load address 0x00000e60
+ adcACpropab.cog
+                0x00000000      0x1c4 ../../external_libs/lmm/libSimple.a(adcACpropab.cogc.cog)
+                0x0000003c                _main_ret
+
+.fini           0x00001024       0x3c
+ *(.fini*)
+ .fini          0x00001024       0x28 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtbegin.o
+                0x00001024                _exit
+ .fini          0x0000104c       0x14 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+                0x00001050                __exit
+                0x00001050                __Exit
+                0x0000105c                __ExitHook
+
+.hub            0x00001060      0x124
+ *(.hubstart)
+ *(.hubtext*)
+ *(.hubdata*)
+ *(.hub)
+ *(.data)
+ .data          0x00001060       0x10 CMakeFiles/GettingStarted.dir/GettingStarted.cpp.obj
+ *(.data*)
+ .data._ZN8PropWare4UART20PARALLAX_STANDARD_TXE
+                0x00001070        0x4 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+                0x00001070                __ZN8PropWare4UART20PARALLAX_STANDARD_TXE
+ .data._ZN8PropWare4UART12DEFAULT_BAUDE
+                0x00001074        0x4 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+                0x00001074                __ZN8PropWare4UART12DEFAULT_BAUDE
+ .data._cfg_baudrate
+                0x00001078        0x4 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+                0x00001078                __cfg_baudrate
+ .data._cfg_txpin
+                0x0000107c        0x4 ../../PropWare/models/lmm/libPropWare.a(uart.cpp.obj)
+                0x0000107c                __cfg_txpin
+ *(.rodata)
+ *(.rodata*)
+ .rodata._ZTCN8PropWare11SimplexUARTE0_NS_19AbstractSimplexUARTE
+                0x00001080       0x80 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00001080                __ZTCN8PropWare11SimplexUARTE0_NS_19AbstractSimplexUARTE
+ .rodata._ZTVN8PropWare11SimplexUARTE
+                0x00001100       0x80 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00001100                __ZTVN8PropWare11SimplexUARTE
+ *(.gnu.linkonce.d*)
+                0x00001180                PROVIDE (__C_LOCK, .)
+                0x00001180        0x4 LONG 0x0
+
+.math.kerext    0x000006c0       0xdc load address 0x00001184
+ .math.kerext   0x000006c0       0xdc /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o
+                0x000006d8                __CTZSI_impl
+                0x00000710                __CLZSI_impl_ret
+
+.start.kerext   0x000006c0       0x3c load address 0x00001260
+ .start.kerext  0x000006c0       0x3c /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crt0.o
+                0x000006c4                __LMM_init
+
+.ctors          0x0000129c        0x8
+ *(.ctors*)
+ .ctors         0x0000129c        0x4 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+ .ctors         0x000012a0        0x4 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+                0x000012a0                __environ
+                0x000012a0                __argv
+
+.dtors          0x000012a4        0x4
+ *(.dtors*)
+ .dtors         0x000012a4        0x4 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/short-doubles/_crtend.o
+
+.data           0x000012a8        0x0
+                0x000012a8                . = ALIGN (0x4)
+
+.bss            0x000012a8       0xd8
+                0x000012a8                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x000012a8       0xa8 /opt/parallax.2408/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/short-doubles/libc.a(thread.o)
+                0x000012a8                ___napuntil_ptr
+ *(.bss*)
+ .bss.pwOut     0x00001350        0x8 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00001350                _pwOut
+ .bss._g_simplexUart
+                0x00001358       0x20 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00001358                __g_simplexUart
+ .bss._ZN8PropWare7Printer14DEFAULT_FORMATE
+                0x00001378        0x8 ../../PropWare/models/lmm/libPropWare.a(printer.cpp.obj)
+                0x00001378                __ZN8PropWare7Printer14DEFAULT_FORMATE
+ *(COMMON)
+                0x00001380                PROVIDE (__bss_end, .)
+
+.hub_heap       0x00001380        0x4
+                0x00001384                . = (. + 0x4)
+ *fill*         0x00001380        0x4 
+                0x00001380                ___hub_heap_start = ADDR (.hub_heap)
+
+.drivers
+ *(.drivers)
+                0x00000020                __load_start_kernel = LOADADDR (.lmmkernel)
+                0x0000129c                ___CTOR_LIST__ = ADDR (.ctors)
+                0x000012a4                ___DTOR_LIST__ = ADDR (.dtors)
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo .zdebug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames .zdebug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges .zdebug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames .zdebug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.* .zdebug_info)
+
+.debug_abbrev
+ *(.debug_abbrev .zdebug_abbrev)
+
+.debug_line
+ *(.debug_line .zdebug_line)
+
+.debug_frame
+ *(.debug_frame .zdebug_frame)
+
+.debug_str
+ *(.debug_str .zdebug_str)
+
+.debug_loc
+ *(.debug_loc .zdebug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo .zdebug_macinfo)
+                0x00000000                PROVIDE (__clkfreq, 0x0)
+                0x00000004                PROVIDE (__clkmode, 0x4)
+                0x000007c0                PROVIDE (PAR, 0x7c0)
+                0x000007c4                PROVIDE (CNT, 0x7c4)
+                0x000007c8                PROVIDE (INA, 0x7c8)
+                0x000007cc                PROVIDE (INB, 0x7cc)
+                0x000007d0                PROVIDE (OUTA, 0x7d0)
+                0x000007d4                PROVIDE (OUTB, 0x7d4)
+                0x000007d8                PROVIDE (DIRA, 0x7d8)
+                0x000007dc                PROVIDE (DIRB, 0x7dc)
+                0x000007e0                PROVIDE (CTRA, 0x7e0)
+                0x000007e4                PROVIDE (CTRB, 0x7e4)
+                0x000007e8                PROVIDE (FRQA, 0x7e8)
+                0x000007ec                PROVIDE (FRQB, 0x7ec)
+                0x000007f0                PROVIDE (PHSA, 0x7f0)
+                0x000007f4                PROVIDE (PHSB, 0x7f4)
+                0x000007f8                PROVIDE (VCFG, 0x7f8)
+                0x000007fc                PROVIDE (VSCL, 0x7fc)
+                0x000007c0                PROVIDE (par, PAR)
+                0x000007c4                PROVIDE (cnt, CNT)
+                0x000007c8                PROVIDE (ina, INA)
+                0x000007cc                PROVIDE (inb, INB)
+                0x000007d0                PROVIDE (outa, OUTA)
+                0x000007d4                PROVIDE (outb, OUTB)
+                0x000007d8                PROVIDE (dira, DIRA)
+                0x000007dc                PROVIDE (dirb, DIRB)
+                0x000007e0                PROVIDE (ctra, CTRA)
+                0x000007e4                PROVIDE (ctrb, CTRB)
+                0x000007e8                PROVIDE (frqa, FRQA)
+                0x000007ec                PROVIDE (frqb, FRQB)
+                0x000007f0                PROVIDE (phsa, PHSA)
+                0x000007f4                PROVIDE (phsb, PHSB)
+                0x000007f8                PROVIDE (vcfg, VCFG)
+                0x000007fc                PROVIDE (vscl, VSCL)
+                0x00001390                PROVIDE (__hub_end, (ADDR (.hub_heap) + 0x10))
+                0x00008000                PROVIDE (__stack_end, 0x8000)
+OUTPUT(GettingStarted elf32-propeller)
+                0x00001184                PROVIDE (__load_start_math_kerext, LOADADDR (.math.kerext))
+                0x00001260                PROVIDE (__load_stop_math_kerext, (LOADADDR (.math.kerext) + SIZEOF (.math.kerext)))
+                0x00001260                PROVIDE (__load_start_start_kerext, LOADADDR (.start.kerext))
+                0x0000129c                PROVIDE (__load_stop_start_kerext, (LOADADDR (.start.kerext) + SIZEOF (.start.kerext)))
+                0x00000e60                PROVIDE (__load_start_adcACpropab_cog, LOADADDR (adcACpropab.cog))
+                0x00001024                PROVIDE (__load_stop_adcACpropab_cog, (LOADADDR (adcACpropab.cog) + SIZEOF (adcACpropab.cog)))
