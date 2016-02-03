@@ -7,7 +7,11 @@
 #include <gtest/gtest.h>
 #include <ElfSizer.h>
 
-TEST(ElfSizerTest, HandlesBadInputFile) {
+class ElfSizerTest: public ::testing::Test {
+
+};
+
+TEST_F(ElfSizerTest, HandlesBadInputFile) {
     ElfSizer elfSizer("/bogus/file");
 
     ASSERT_EQ(ElfSizer::ErrorCode::BAD_INPUT_FILE, elfSizer.run());

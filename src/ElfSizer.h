@@ -1,6 +1,8 @@
-//
-// Created by david on 2/2/16.
-//
+/**
+ * @file    ElfSizerTest.h
+ *
+ * @author  David Zemon
+ */
 
 #pragma once
 

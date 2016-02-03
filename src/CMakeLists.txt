@@ -1,4 +1,6 @@
-add_library(elfsizer ElfSizer)
+include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/cpp-argparse)
+
+add_library(elfsizer ElfSizer ElfSizerBuilder)
 target_link_libraries(elfsizer cpp-argparse)
 
 add_executable(elfsizer-bin main)
