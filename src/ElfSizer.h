@@ -19,5 +19,10 @@ class ElfSizer {
         ElfSizer(const std::string inputFile);
 
         int run ();
+
+        const std::string& get_input() const;
+
+    protected:
+        const std::string m_input;
 };
 

@@ -7,8 +7,11 @@
 #include <OptionParser.h>
 #include "ElfSizerBuilder.h"
 
-ElfSizer *ElfSizerBuilder::build(const int argc, char const* const* const argv) {
+ElfSizer *ElfSizerBuilder::build(const int argc, char const *const *const argv) {
     optparse::OptionParser parser;
+
+    parser.add_option("-i", "--input")
+        .help("Map file for binary (such as main.rawmap)");
 
     optparse::Values values = parser.parse_args(argc, argv);
 
