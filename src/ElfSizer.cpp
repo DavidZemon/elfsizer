@@ -5,10 +5,10 @@
  */
 
 #include "ElfSizer.h"
+#include "Utility.h"
 
 ElfSizer::ElfSizer(const std::string input)
-    : m_input(input) {
-
+    : m_input(Utility::expand_user(input)) {
 }
 
 int ElfSizer::run() {
