@@ -2,6 +2,7 @@ add_custom_target(test-all
     COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure)
 
 include_directories(${PROJECT_SOURCE_DIR}/src)
+include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/googletest/googletest/include)
 
 macro(create_test name src1)
     add_executable(${name} ${src1} ${ARGN})
@@ -12,3 +13,4 @@ endmacro()
 
 create_test(ElfSizerTest ElfSizerTest.cpp)
 create_test(ElfSizerBuilderTest ElfSizerBuilderTest.cpp)
+create_test(UtilityTest UtilityTest.cpp)

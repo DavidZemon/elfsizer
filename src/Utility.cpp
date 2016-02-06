@@ -1,10 +1,11 @@
 /**
- * @file    Utility
+ * @file    Utility.cpp
  *
  * @author  David Zemon
  */
 
 #include "Utility.h"
+#include <sstream>
 
 std::string Utility::expand_user(std::string path) {
     if (!path.empty() && path[0] == '~') {
@@ -23,4 +24,18 @@ std::string Utility::expand_user(std::string path) {
         }
     }
     return path;
+}
+
+std::vector<std::string> *Utility::whitespace_split(const std::string &s) {
+    std::vector<std::string> *result = new std::vector<std::string>();
+
+    std::stringstream ss(s);
+    while (!ss.eof()) {
+        std::string item;
+        ss >> item;
+        if (item.length())
+            result->push_back(item);
+    }
+
+    return result;
 }
