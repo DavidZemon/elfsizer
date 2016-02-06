@@ -51,6 +51,22 @@ TEST(UtilityTest, WhitespaceSplit_ManyElements) {
     ASSERT_EQ("test.", (*actual)[3]);
 }
 
+TEST(UtilityTest, Find_CaseSensitive_NotFound) {
+    ASSERT_FALSE(Utility::find("This is a test", "TEST"));
+}
+
+TEST(UtilityTest, Find_CaseInsensitive_NotFound) {
+    ASSERT_FALSE(Utility::find("This is a test", "TEST.", false));
+}
+
+TEST(UtilityTest, Find_CaseSensitive_Found) {
+    ASSERT_TRUE(Utility::find("This is a test", "test"));
+}
+
+TEST(UtilityTest, Find_CaseInsensitive_Found) {
+    ASSERT_TRUE(Utility::find("This is a test", "TEST", false));
+}
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

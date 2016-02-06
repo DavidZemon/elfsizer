@@ -39,3 +39,16 @@ std::vector<std::string> *Utility::whitespace_split(const std::string &s) {
 
     return result;
 }
+
+bool Utility::find(const std::string &searchable, const std::string &target, const bool case_sensitive) {
+    if (case_sensitive) {
+        return std::string::npos != searchable.find(target);
+    } else {
+        auto it = std::search(
+            searchable.begin(), searchable.end(),
+            target.begin(), target.end(),
+            [](char ch1, char ch2) { return std::toupper(ch1) == std::toupper(ch2); }
+        );
+        return (it != searchable.end());
+    }
+}
