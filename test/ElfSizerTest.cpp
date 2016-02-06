@@ -64,9 +64,10 @@ TEST_F(ElfSizerTest, ReadsMap) {
 }
 
 int main(int argc, char **argv) {
-    char *objdump = std::getenv("ELFSIZER_OBJDUMP_PATH");
-    assert(NULL != objdump);
-    OBJDUMP_PATH = objdump;
+    assert(2 <= argc);
+    assert(strlen(argv[1]));
+    OBJDUMP_PATH = argv[1];
+    assert(Utility::exists(OBJDUMP_PATH));
 
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

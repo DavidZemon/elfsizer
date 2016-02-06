@@ -17,9 +17,8 @@ macro(create_test name src1)
     add_executable(${name} ${src1} ${ARGN})
     target_link_libraries(${name} elfsizer gtest pthread)
     add_test(NAME ${name}
-        COMMAND ${name}
+        COMMAND ${name} ${PROPGCC_OBJDUMP}
         WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
-    set_property(TEST ${name} PROPERTY ENVIRONMENT "ELFSIZER_OBJDUMP_PATH=${PROPGCC_OBJDUMP}")
     add_dependencies(test-all ${name})
 endmacro()
 
