@@ -5,12 +5,9 @@
  */
 
 #include <OptionParser.h>
-#include <PoppyDebugTools.h>
 #include "ElfSizerBuilder.h"
 
 ElfSizer *ElfSizerBuilder::build(const int argc, char const *const *const argv) {
-    STACK
-
     optparse::OptionParser parser;
 
     parser.add_option("-i", "--input")

@@ -6,13 +6,10 @@
 
 #include "Utility.h"
 #include <sstream>
-#include <PoppyDebugTools.h>
 #include <memory>
 #include <sys/stat.h>
 
 std::string Utility::expand_user(std::string path) {
-    STACK
-
     if (!path.empty() && path[0] == '~') {
         assert(path.size() == 1 || path[1] == '/');  // or other error handling
 
@@ -32,8 +29,6 @@ std::string Utility::expand_user(std::string path) {
 }
 
 std::vector<std::string> *Utility::whitespace_split(const std::string &s) {
-    STACK
-
     std::vector<std::string> *result = new std::vector<std::string>();
 
     std::stringstream ss(s);
@@ -48,8 +43,6 @@ std::vector<std::string> *Utility::whitespace_split(const std::string &s) {
 }
 
 bool Utility::contains(const std::string &searchable, const std::string &target, const bool case_sensitive) {
-    STACK
-
     if (case_sensitive) {
         return std::string::npos != searchable.find(target);
     } else {
@@ -63,8 +56,6 @@ bool Utility::contains(const std::string &searchable, const std::string &target,
 }
 
 std::string Utility::exec(const std::string &command) {
-    STACK
-
     // Taken from http://stackoverflow.com/a/478960/2784641
     FILE                  *pipeFileNumber = popen(command.c_str(), "r");
     std::shared_ptr<FILE> pipe(pipeFileNumber, pclose);

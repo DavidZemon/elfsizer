@@ -10,7 +10,6 @@ macro(create_test name src1)
     add_test(NAME ${name}
         COMMAND ${name}
         WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
-    message(${CMAKE_CURRENT_SOURCE_DIR})
     add_dependencies(test-all ${name})
 endmacro()
 

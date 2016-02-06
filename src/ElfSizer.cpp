@@ -7,25 +7,17 @@
 #include "ElfSizer.h"
 #include "Utility.h"
 #include <fstream>
-#include <PoppyDebugTools.h>
-
-// FIXME
-#include <iostream>
+#include <sstream>
 
 ElfSizer::ElfSizer(const std::string input)
     : m_input(Utility::expand_user(input)) {
-    STACK
-
 }
 
 const std::string &ElfSizer::get_input() const {
-    STACK
     return this->m_input;
 }
 
 ElfSizer::Map ElfSizer::run() {
-    STACK
-
     std::vector<std::string> lines;
     this->readLinesIntoVector(lines);
 
@@ -68,29 +60,27 @@ ElfSizer::Map ElfSizer::run() {
 }
 
 void ElfSizer::readLinesIntoVector(std::vector<std::string> &lines) const {
-    STACK
-
     if (!Utility::exists(this->m_input))
         throw std::ios_base::failure("File does not exist (" + this->m_input + ")");
 
-    const std::string command       = "/opt/parallax/bin/propeller-elf-objdump -h " + this->m_input;
-    std::stringstream commandOutput = std::stringstream(Utility::exec(command));
+    const std::string command      = "/opt/parallax/bin/propeller-elf-objdump -h " + this->m_input;
+    const std::string stringOutput = Utility::exec(command);
+    std::stringstream streamOutput;
+    streamOutput << stringOutput;
 
     const unsigned int bufferSize = 1024;
     char               buffer[bufferSize];
-    while (commandOutput.getline(buffer, bufferSize)) {
+    while (streamOutput.getline(buffer, bufferSize)) {
         std::string line = buffer;
         lines.push_back(line);
     }
 }
 
 bool ElfSizer::lineIsHeap(const std::string &line) {
-    STACK
     return Utility::contains(line, "heap", false);
 }
 
 bool ElfSizer::lineIsBss(const std::string &line) {
-    STACK
     return Utility::contains(line, ".bss", false);
 }
 
