@@ -20,11 +20,13 @@ class ElfSizer {
         };
 
     public:
-        ElfSizer(const std::string inputFile);
+        ElfSizer(const std::string &input, const std::string &objdump);
 
         Map run();
 
         const std::string &get_input() const;
+
+        const std::string &get_objdump() const;
 
     protected:
         void readLinesIntoVector(std::vector<std::string> &lines) const;
@@ -36,5 +38,6 @@ class ElfSizer {
 
     protected:
         const std::string m_input;
+        const std::string m_objdump;
 };
 

@@ -9,11 +9,13 @@
 #include <Utility.h>
 
 const std::string TEST_FILE = "Welcome.elf";
+//const std::string OBJDUMP_PATH = std::getenv(""); // FIXME
+const std::string OBJDUMP_PATH = "/opt/parallax/bin/propeller-elf-objdump";
 
 class ElfSizerTest: public ::testing::Test {
     protected:
         virtual void SetUp() {
-            this->testable = new ElfSizer(TEST_FILE);
+            this->testable = new ElfSizer(TEST_FILE, OBJDUMP_PATH);
         }
 
         virtual void TearDown() {
@@ -26,17 +28,31 @@ class ElfSizerTest: public ::testing::Test {
 };
 
 TEST_F(ElfSizerTest, HandlesBadInputFile) {
-    ElfSizer elfSizer("/bogus/file");
+    ElfSizer elfSizer("/bogus/file", OBJDUMP_PATH);
 
     EXPECT_THROW(elfSizer.run(), std::ios_base::failure);
 }
 
 TEST_F(ElfSizerTest, InputFile_UserExpanded) {
-    ElfSizer elfSizer("~/file");
+    ElfSizer elfSizer("~/file", OBJDUMP_PATH);
 
     std::string expectedPath = std::getenv("HOME");
     expectedPath += "/file";
     ASSERT_EQ(expectedPath, elfSizer.get_input());
+}
+
+TEST_F(ElfSizerTest, HandlesBadObjdump) {
+    ElfSizer elfSizer(TEST_FILE, "/bogus/file");
+
+    EXPECT_THROW(elfSizer.run(), std::ios_base::failure);
+}
+
+TEST_F(ElfSizerTest, Objdump_UserExpanded) {
+    ElfSizer elfSizer(TEST_FILE, "~/file");
+
+    std::string expectedPath = std::getenv("HOME");
+    expectedPath += "/file";
+    ASSERT_EQ(expectedPath, elfSizer.get_objdump());
 }
 
 TEST_F(ElfSizerTest, ReadsMap) {

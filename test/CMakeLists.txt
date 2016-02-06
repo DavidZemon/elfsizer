@@ -3,6 +3,7 @@ add_custom_target(test-all
 
 include_directories("${PROJECT_SOURCE_DIR}/src")
 include_directories(SYSTEM "${PROJECT_SOURCE_DIR}/googletest/googletest/include")
+include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/cpp-argparse)
 
 macro(create_test name src1)
     add_executable(${name} ${src1} ${ARGN})

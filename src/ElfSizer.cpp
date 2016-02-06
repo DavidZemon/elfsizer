@@ -9,12 +9,16 @@
 #include <fstream>
 #include <sstream>
 
-ElfSizer::ElfSizer(const std::string input)
-    : m_input(Utility::expand_user(input)) {
+ElfSizer::ElfSizer(const std::string &input, const std::string &objdump)
+    : m_input(Utility::expand_user(input)), m_objdump(Utility::expand_user(objdump)) {
 }
 
 const std::string &ElfSizer::get_input() const {
     return this->m_input;
+}
+
+const std::string &ElfSizer::get_objdump() const {
+    return this->m_objdump;
 }
 
 ElfSizer::Map ElfSizer::run() {
@@ -60,10 +64,12 @@ ElfSizer::Map ElfSizer::run() {
 }
 
 void ElfSizer::readLinesIntoVector(std::vector<std::string> &lines) const {
+    if (!Utility::exists(this->m_objdump))
+        throw std::ios_base::failure("Can not find propeller-elf-objdump (" + this->m_objdump + ")");
     if (!Utility::exists(this->m_input))
         throw std::ios_base::failure("File does not exist (" + this->m_input + ")");
 
-    const std::string command      = "/opt/parallax/bin/propeller-elf-objdump -h " + this->m_input;
+    const std::string command      = this->m_objdump + " -h " + this->m_input;
     const std::string stringOutput = Utility::exec(command);
     std::stringstream streamOutput;
     streamOutput << stringOutput;
