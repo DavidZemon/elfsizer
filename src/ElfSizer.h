@@ -30,9 +30,9 @@ class ElfSizer {
         void readLinesIntoVector(std::vector<std::string> &lines) const;
 
     protected:
-        static bool lineIsHeap(const std::string &ms);
-        static bool bssInLine(const std::string &ms);
-        static bool lastLine(const std::vector<std::string> &lines, const unsigned int lineNumber);
+        static bool lineIsHeap(const std::string &line);
+        static bool lineIsBss(const std::string &line);
+        static int  convertFromHex(const std::string word);
 
     protected:
         const std::string m_input;

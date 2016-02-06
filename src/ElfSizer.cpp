@@ -25,49 +25,35 @@ const std::string &ElfSizer::get_input() const {
 
 ElfSizer::Map ElfSizer::run() {
     STACK
-    size_t numberOfCharactersProcessed;
 
     std::vector<std::string> lines;
     this->readLinesIntoVector(lines);
 
     Map map;
 
-    for (unsigned int lineNumber = 0; lineNumber < lines.size(); ++lineNumber) {
-        std::string line = lines[lineNumber];
+    const unsigned long totalLines = lines.size();
+    for (unsigned int   lineNumber = 0; lineNumber < totalLines; ++lineNumber) {
+        const std::string line     = lines[lineNumber];
+        const std::string nextLine = lines[lineNumber + 1];
 
-        if (line.length() > 0) {
-            // TODO: What is `ms`? Can we put some error handling in here?
+        if (line.length()) {
             const unsigned long indexOfDot = line.find(".");
             if (std::string::npos != indexOfDot) {
-                const std::string              ms     = line.substr(indexOfDot);
-                const std::vector<std::string> *words = Utility::whitespace_split(ms);
+                const std::string              lineAfterDot = line.substr(indexOfDot);
+                const std::vector<std::string> *words       = Utility::whitespace_split(lineAfterDot);
 
-                if (ElfSizer::bssInLine(ms)) {
-                    if (2 < words->size()) {
-                        try {
-                            const std::string sizeInHex = (*words)[1];
-                            int               lineSize  = std::stoi(sizeInHex, &numberOfCharactersProcessed, 16);
+                if (nullptr != words && 2 < words->size()) {
+                    if (ElfSizer::lineIsBss(lineAfterDot)) {
+                        map.totalSize += ElfSizer::convertFromHex((*words)[1]);
+                    } else if (ElfSizer::lineIsHeap(lineAfterDot)) {
+                        // TODO: Why is this commented out? It is commented out in the original SimpleIDE code
+                        //codeSize += 4;
+                        //memorySize += 4;
+                    } else if (lineNumber != (totalLines - 1)) {
+                        if (Utility::contains(nextLine, "load", false)) {
+                            int lineSize = ElfSizer::convertFromHex((*words)[1]);
                             map.totalSize += lineSize;
-                        } catch (std::invalid_argument ignored) {
-                            // Just move on if string can't be converted
-                        }
-                    }
-                } else if (ElfSizer::lineIsHeap(ms)) {
-                    // TODO: Why is this commented out? It is commented out in the original SimpleIDE code
-                    //codeSize += 4;
-                    //memorySize += 4;
-                    break;
-                } else if (!lastLine(lines, lineNumber)) {
-                    const std::string nextLine = lines[lineNumber + 1];
-                    if (Utility::contains(nextLine, "load", false)) {
-                        if (2 < words->size()) {
-                            try {
-                                int lineSize = std::stoi((*words)[1], &numberOfCharactersProcessed, 16);
-                                map.totalSize += lineSize;
-                                map.codeSize += lineSize;
-                            } catch (std::invalid_argument ignored) {
-                                // Just move on if string can't be converted
-                            }
+                            map.codeSize += lineSize;
                         }
                     }
                 }
@@ -98,17 +84,21 @@ void ElfSizer::readLinesIntoVector(std::vector<std::string> &lines) const {
     }
 }
 
-bool ElfSizer::bssInLine(const std::string &ms) {
+bool ElfSizer::lineIsHeap(const std::string &line) {
     STACK
-    return Utility::contains(ms, ".bss", false);
+    return Utility::contains(line, "heap", false);
 }
 
-bool ElfSizer::lineIsHeap(const std::string &ms) {
+bool ElfSizer::lineIsBss(const std::string &line) {
     STACK
-    return Utility::contains(ms, "heap", false);
+    return Utility::contains(line, ".bss", false);
 }
 
-bool ElfSizer::lastLine(const std::vector<std::string> &lines, const unsigned int lineNumber) {
-    STACK
-    return lineNumber == (lines.size() - 1);
+int ElfSizer::convertFromHex(const std::string word) {
+    size_t charsProcessed;
+    try {
+        return std::stoi(word, &charsProcessed, 16);
+    } catch (std::invalid_argument ignored) {
+        return 0;
+    }
 }
