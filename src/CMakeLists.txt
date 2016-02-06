@@ -1,4 +1,5 @@
 include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/cpp-argparse)
+include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/Poppy)
 
 add_library(elfsizer
     ElfSizer

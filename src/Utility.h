@@ -17,5 +17,10 @@ class Utility {
 
         static std::vector<std::string> *whitespace_split(const std::string &s);
 
-        static bool find(const std::string &searchable, const std::string &target, const bool case_sensitive = true);
+        static bool
+            contains(const std::string &searchable, const std::string &target, const bool case_sensitive = true);
+
+        static std::string exec(const std::string &command);
+
+        static bool exists(const std::string &name);
 };

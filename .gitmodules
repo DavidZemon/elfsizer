@@ -4,3 +4,6 @@
 [submodule "googletest"]
 	path = googletest
 	url = https://github.com/google/googletest.git
+[submodule "Poppy"]
+	path = Poppy
+	url = https://github.com/orling/Poppy.git

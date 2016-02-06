@@ -52,19 +52,19 @@ TEST(UtilityTest, WhitespaceSplit_ManyElements) {
 }
 
 TEST(UtilityTest, Find_CaseSensitive_NotFound) {
-    ASSERT_FALSE(Utility::find("This is a test", "TEST"));
+    ASSERT_FALSE(Utility::contains("This is a test", "TEST"));
 }
 
 TEST(UtilityTest, Find_CaseInsensitive_NotFound) {
-    ASSERT_FALSE(Utility::find("This is a test", "TEST.", false));
+    ASSERT_FALSE(Utility::contains("This is a test", "TEST.", false));
 }
 
 TEST(UtilityTest, Find_CaseSensitive_Found) {
-    ASSERT_TRUE(Utility::find("This is a test", "test"));
+    ASSERT_TRUE(Utility::contains("This is a test", "test"));
 }
 
 TEST(UtilityTest, Find_CaseInsensitive_Found) {
-    ASSERT_TRUE(Utility::find("This is a test", "TEST", false));
+    ASSERT_TRUE(Utility::contains("This is a test", "TEST", false));
 }
 
 int main(int argc, char **argv) {
