@@ -9,8 +9,7 @@
 #include <Utility.h>
 
 const std::string TEST_FILE = "Welcome.elf";
-//const std::string OBJDUMP_PATH = std::getenv(""); // FIXME
-const std::string OBJDUMP_PATH = "/opt/parallax/bin/propeller-elf-objdump";
+std::string       OBJDUMP_PATH;
 
 class ElfSizerTest: public ::testing::Test {
     protected:
@@ -65,6 +64,10 @@ TEST_F(ElfSizerTest, ReadsMap) {
 }
 
 int main(int argc, char **argv) {
+    char *objdump = std::getenv("ELFSIZER_OBJDUMP_PATH");
+    assert(NULL != objdump);
+    OBJDUMP_PATH = objdump;
+
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
