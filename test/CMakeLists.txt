@@ -2,7 +2,7 @@ add_custom_target(test-all
     COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure)
 
 include_directories("${PROJECT_SOURCE_DIR}/src")
-include_directories(SYSTEM "${PROJECT_SOURCE_DIR}/googletest/googletest/include")
+include_directories(SYSTEM "${PROJECT_SOURCE_DIR}/googletest/include")
 include_directories(SYSTEM ${PROJECT_SOURCE_DIR}/cpp-argparse)
 
 find_program(PROPGCC_OBJDUMP propeller-elf-objdump
