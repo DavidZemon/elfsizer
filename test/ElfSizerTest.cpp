@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <ElfSizer.h>
 #include <Utility.h>
+#include <teamcity_messages.h>
+#include <teamcity_gtest.h>
 
 const std::string TEST_FILE = "Welcome.elf";
 std::string       OBJDUMP_PATH;
@@ -69,5 +71,9 @@ int main(int argc, char **argv) {
     assert(Utility::exists(TEST_FILE));
 
     testing::InitGoogleTest(&argc, argv);
+    if (jetbrains::teamcity::underTeamcity()) {
+        ::testing::TestEventListeners &listeners = ::testing::UnitTest::GetInstance()->listeners();
+        listeners.Append(new jetbrains::teamcity::TeamcityGoogleTestEventListener());
+    }
     return RUN_ALL_TESTS();
 }

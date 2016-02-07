@@ -6,6 +6,8 @@
 
 #include <gtest/gtest.h>
 #include <Utility.h>
+#include <teamcity_messages.h>
+#include <teamcity_gtest.h>
 
 TEST(UtilityTest, WhitespaceSplit_EmptyVectorForEmptyString) {
     std::vector<std::string> *actual = Utility::whitespace_split("");
@@ -69,5 +71,9 @@ TEST(UtilityTest, Find_CaseInsensitive_Found) {
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
+    if (jetbrains::teamcity::underTeamcity()) {
+        ::testing::TestEventListeners &listeners = ::testing::UnitTest::GetInstance()->listeners();
+        listeners.Append(new jetbrains::teamcity::TeamcityGoogleTestEventListener());
+    }
     return RUN_ALL_TESTS();
 }

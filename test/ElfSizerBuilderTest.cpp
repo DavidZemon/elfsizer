@@ -6,6 +6,8 @@
 
 #include <gtest/gtest.h>
 #include <ElfSizerBuilder.h>
+#include <teamcity_messages.h>
+#include <teamcity_gtest.h>
 
 class ElfSizerBuilderTest: public ::testing::Test {
     protected:
@@ -107,5 +109,9 @@ TEST_F(ElfSizerBuilderTest, NoError_LongArg_WithEquals) {
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
+    if (jetbrains::teamcity::underTeamcity()) {
+        ::testing::TestEventListeners &listeners = ::testing::UnitTest::GetInstance()->listeners();
+        listeners.Append(new jetbrains::teamcity::TeamcityGoogleTestEventListener());
+    }
     return RUN_ALL_TESTS();
 }
