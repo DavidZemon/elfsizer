@@ -55,8 +55,6 @@ TEST_F(ElfSizerTest, Objdump_UserExpanded) {
 }
 
 TEST_F(ElfSizerTest, ReadsMap) {
-    ASSERT_TRUE(Utility::exists(TEST_FILE));
-
     const ElfSizer::Map actualMap = this->testable->run();
 
     ASSERT_EQ(8132, actualMap.codeSize);
@@ -68,6 +66,7 @@ int main(int argc, char **argv) {
     assert(strlen(argv[1]));
     OBJDUMP_PATH = argv[1];
     assert(Utility::exists(OBJDUMP_PATH));
+    assert(Utility::exists(TEST_FILE));
 
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

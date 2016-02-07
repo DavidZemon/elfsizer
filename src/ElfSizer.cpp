@@ -30,7 +30,6 @@ ElfSizer::Map ElfSizer::run() {
     const unsigned long totalLines = lines.size();
     for (unsigned int   lineNumber = 0; lineNumber < totalLines; ++lineNumber) {
         const std::string line     = lines[lineNumber];
-        const std::string nextLine = lines[lineNumber + 1];
 
         if (line.length()) {
             const unsigned long indexOfDot = line.find(".");
@@ -46,6 +45,7 @@ ElfSizer::Map ElfSizer::run() {
                         //codeSize += 4;
                         //memorySize += 4;
                     } else if (lineNumber != (totalLines - 1)) {
+                        const std::string nextLine = lines[lineNumber + 1];
                         if (Utility::contains(nextLine, "load", false)) {
                             int lineSize = ElfSizer::convertFromHex((*words)[1]);
                             map.totalSize += lineSize;
